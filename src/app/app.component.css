@@ -1,0 +1,9 @@
+.main {
+    margin: 15px 0px;
+    height: 600px;
+}
+
+.friend {
+    display: inline-block;
+    width: 200px;
+}

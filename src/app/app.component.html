@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <app-navbar></app-navbar>
+
+  <div class="center-align main">
+    <h1 class="header center">Добро пожаловать в приложение {{title}}</h1>
+    <a *ngIf="friends.length==0" class="btn waves-effect waves-light" href="https://oauth.vk.com/authorize?client_id=6361891&display=popup&redirect_uri=https://fathomless-beach-33.herokuapp.com&scope=friends&response_type=code&v=5.71">Авторизоваться</a>
+    <div *ngIf="friends.length>0">
+      <div *ngFor="let friend of friends;"  class="friend">
+        <img src="{{friend.photo_100}}"/>
+        <p>{{friend.first_name}} {{friend.last_name}}</p>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+
